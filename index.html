@@ -9,7 +9,7 @@
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="assets/css/style.css" rel="stylesheet" />
 
-    <title>Hello, world!</title>
+    <title>Home</title>
   </head>
   <body>
     <header>
@@ -85,7 +85,7 @@
           </div>
         </div>
       </div>
-      <nav class="navbar navbar-expand-sm">
+      <nav class="navbar navbar-expand-sm" id="navbar">
         <div class="container">
           <a class="navbar-brand" href="#">
             <img src="assets/images/logo.png" alt="logo" class="img-fluid" />
@@ -174,20 +174,91 @@
       <section class="hero-section">
         <div class="container">
           <div class="row">
-            <div class="col-md-5">
+            <div class="col-md-6">
               <div
                 class="hero-content d-flex align-items-start justify-content-center flex-column"
               >
-                <h1>Make Trading Easy, Then Easier</h1>
-                <span> Elevate Your Trading Performance </span>
-                <button class="btn hero-btn">Sign Up Now</button>
+                <h1 class="mb-3">Make Trading Easy, Then Easier</h1>
+                <span class="mb-5"> Elevate Your Trading Performance </span>
+                <button class="btn hero-btn mt-4">Sign Up Now</button>
+                <span class="sub-heading"
+                  >*Trading in Forex/ CFDs is highly speculative and carries a
+                  high level of risk.</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="row hero-margin">
+            <div class="col-md-3">
+              <div class="hero-features">
+                <div class="hero-features-img">
+                  <img
+                    src="assets/images/enhanced-tools.svg"
+                    alt="Enhanced Tools"
+                    class="img-fluid"
+                  />
+                </div>
+                <span>Enhanced Tools</span>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="hero-features">
+                <div class="hero-features-img">
+                  <img
+                    src="assets/images/trading-guides.svg"
+                    alt="Enhanced Tools"
+                    class="img-fluid"
+                  />
+                </div>
+                <span>Trading Guides</span>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="hero-features">
+                <div class="hero-features-img">
+                  <img
+                    src="assets/images/fast-execution.svg"
+                    alt="Enhanced Tools"
+                    class="img-fluid"
+                  />
+                </div>
+                <span>Fast execution</span>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="hero-features">
+                <div class="hero-features-img">
+                  <img
+                    src="assets/images/commission.svg"
+                    alt="Enhanced Tools"
+                    class="img-fluid"
+                  />
+                </div>
+                <span>0% Commission</span>
               </div>
             </div>
           </div>
         </div>
       </section>
+      <section class="about"></section>
     </main>
 
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+      window.onscroll = function () {
+        myFunction();
+      };
+
+      var navbar = document.getElementById("navbar");
+      var sticky = navbar.offsetTop;
+
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky");
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+    </script>
   </body>
 </html>
