@@ -75,6 +75,7 @@ section.hero-section .hero-btn {
   top: 0;
   width: 100%;
   background: #fff;
+  z-index: 999999;
 }
 
 .sticky + .content {
@@ -97,4 +98,65 @@ section.hero-section .hero-btn {
 }
 .hero-margin {
   margin-top: 5.5rem;
+}
+.about {
+  background: #e9e8f0;
+}
+.about h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.blue-heading {
+  color: var(--theme-dark-blue);
+}
+.gray-heading {
+  color: var(--theme-dark-grey);
+}
+.about .about-sub-heading {
+  font-size: 0.875rem;
+}
+.about .about-content {
+  margin-top: 2.5rem;
+}
+.about h3 {
+  font-size: 1.25rem;
+  color: var(--theme-dark-grey);
+  font-weight: 700;
+}
+.about .about-video-box video {
+  width: 100%;
+  min-height: 580px;
+  position: relative;
+}
+.services {
+  background: url(../images/service-background.png) no-repeat center;
+}
+.services h3 {
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+}
+.services h3 span {
+  display: block;
+}
+.service-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 2.188rem;
+}
+.service-box span {
+  font-size: 0.875rem;
+  color: #000;
+  line-height: 17px;
+}
+.service-card {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    #ffffff 67.27%
+  );
+  border: 2px solid #e1e1e1;
+  box-shadow: 0px 5px 10px 5px rgba(36, 123, 195, 0.05);
+  border-radius: 15px;
 }
